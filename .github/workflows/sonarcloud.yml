@@ -2,7 +2,11 @@ name: Build
 on:
   push:
     branches:
+<<<<<<< HEAD
       - producao
+=======
+      - desenvolvimento
+>>>>>>> 287b8a95f79862a9a023786b69d6454bdf85b448
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
