@@ -6,7 +6,7 @@ export const funcoes = {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
     }).join(''));
 
-    return JSON.parse(jsonPayload);
+    return N.parse(jsonPayload);
   },
   exemplo() {
     console.log("ok")
