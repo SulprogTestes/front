@@ -2,7 +2,7 @@ steps:
   #Execute SonarCloud Scan test 6
   - name: maven:3-jdk-11
     entrypoint: mvn
-    args: ['verify', 'sonar:sonar','-Dsonar.host.url=https://sonarcloud.io','-Dsonar.organization=devsecopscarv','-Dsonar.projectKey=devsecopscarv_sastkey','-Dsonar.login=${_SONAR_TOKEN}','-Dsonar.qualitygate.wait=true','-Dsonar.qualitygate.timeout=300']
+    args: ['verify', 'sonar:sonar','-Dsonar.host.url=https://sonarcloud.io','-Dsonar.organization=sulprogteste','-Dsonar.projectKey=sulprogteste_projetoteste','-Dsonar.login=${_SONAR_TOKEN}','-Dsonar.qualitygate.wait=true','-Dsonar.qualitygate.timeout=300']
     
     #Run Software Composition Analysis (SCA security scan) using Snyk in GCP DevSecOps Pipeline
   - name: 'ubuntu'
